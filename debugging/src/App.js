@@ -43,4 +43,8 @@ const App = () => {
         <section id="goals">
           {content}
         </section>
-      <
+      </div>
+  );
+};
+
+export default App;
