@@ -19,7 +19,7 @@ const App = () => {
   };
 
   const deleteItemHandler = goalId => {
-    setCourseGoals(prevGoals => {
+    setCourseGoals((prevGoals) => {
       const updatedGoals = prevGoals.filter(goal => goal.id !== goalId);
       return updatedGoals;
     });
@@ -36,14 +36,14 @@ const App = () => {
   }
 
   return (
-      
+      <div>
         <section id="goal-form">
           <CourseInput onAddGoal={addGoalHandler} />
         </section>
         <section id="goals">
           {content}
         </section>
-    
+      </div>
   );
 };
 
